@@ -1,0 +1,110 @@
+body{
+ background-image: url("C:\Users\pcc\Desktop\TestProject\testdesign\public\media\images\backgroundImage.jpg");
+
+}
+.nav-logo{
+  width: auto;
+height: auto;
+opacity: 1;
+display: flex; 
+align-items: center;
+gap: 10px;
+
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+padding-left:39px;
+ padding-right: 39px; 
+margin-bottom: 20px;
+}
+
+.nav-image{
+  width: 48px;
+  height: 48px;
+ 
+box-shadow: 0px 2.32px 1.85px 0px #0000002B;
+box-shadow: 0px 5.39px 4.31px 0px #00000020;
+box-shadow: 0px 9.68px 7.74px 0px #0000001B;
+box-shadow: 0px 16.06px 12.85px 0px #00000017;
+box-shadow: 0px 26.45px 21.16px 0px #00000014;
+box-shadow: 0px 46.23px 36.99px 0px #00000010;
+box-shadow: 0px 100px 80px 0px #0000000B;
+
+}
+
+.logo-text{
+  width: 169;
+height: 34;
+opacity: 0.75;
+font-family: Inter;
+font-weight: 900;
+font-style: Black;
+color: white;
+font-size: 28px;
+line-height: 1.2;
+letter-spacing: 0%;
+
+}
+
+.nav-link{
+opacity: 1;
+font-family: Indie Flower;
+font-weight: 400;
+font-style: Regular;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+color: white;
+
+
+}
+
+
+
+.nav-link a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link ul{
+  display: flex;
+gap: 60px;
+list-style: none;
+}
+
+.fa-caret-down{
+  
+opacity: 1;
+margin-left: 20px;
+color: white;
+}
+
+.right-section  {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.serachImage{
+  width: 23px;
+height: 23px;
+opacity: 0.75;
+
+}
+
+.cartImage{
+  width: 23px;
+height: 23px;
+opacity: 0.75;
+}
+
+.shorttext{
+  width: 40px;
+  height: 40px;
+opacity: 1;
+transform: scaleX(-1);
+}
