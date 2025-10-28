@@ -3,7 +3,7 @@
   height: 280px; */
   opacity: 1;
   align-items: center;
-  margin-top: 280px;
+  margin-top: 150px;
 }
 .hero-text {
   font-family: Inter;
@@ -82,45 +82,172 @@
 }
 
 .floating-card {
+  
+  padding: 0;
   position: absolute;
   margin-top: 100px;
-   width: 400px;
-   height: 600px;
-  padding: 15px;
+  width: 400px;
+  height: 500px;
+  /* padding-top: 15px; */
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: rgba(20, 30, 20, 0.4);
- border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(15px);
   color: white;
   border-radius: 50px;
-  top: 80px;
-   right: 80px;
-   z-index: 20;
-/* 
-    clip-path: polygon(
-
-    0 0, 
-    0 40px,
-    50% 80px,
-    100% 40px, 
-    100% 0,
-    100% 100%, 
-    0 100%
-  ); */
+  /* top: 80px; */
+  right: 50px;
+  z-index: 20;
 }
 
 .card-image-wrapper {
-width: 100%;
-overflow: visible;
+  width: 100%;
+  overflow: visible;
 
 }
 
-.plantImage{
-   width: 100%; 
-    height: auto;
-    display: block;
-    
+.plantImage {
+  /* float: inline-start; */
+  /* width: 100%; */
+  width: 350px;
+  /* height: auto; */
+  height: 350px;
+  display: block;
+  object-fit: cover;
 }
 
-.card-content{
-  margin-top:20px;
+
+.content-card h3{
+ font-family: Inter;
+font-weight: 400;
+font-style: Regular;
+font-size: 38px;
+
+}
+.card-content {
+  margin-bottom: 10px;
+}
+.card-button {
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 12px;
+}
+
+.second-card {
+  position: relative;
+  margin-top: 40px;
+  width: 1270px;
+  height: 420px;
+  background-color: rgba(238, 238, 238, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  color: white;
+  border-radius: 120px;
+  overflow: visible; 
+  display: flex;
+  align-items: flex-end; 
+  margin-left: 45px;
+  
+}
+
+.second-card::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border-top: 0.5px solid  rgba(255, 255, 255, 0.95);
+  border-left: 0.5px solid rgba(255, 255, 255, 0.95);
+  width: 15%;
+  height: 70%;
+  border-top-left-radius: 120px;
+}
+
+.second-card::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  border-bottom: 0.5px solid  rgba(255, 255, 255, 0.95);
+  border-right: 0.5px solid rgba(255, 255, 255, 0.95);
+  width: 50%;
+  height: 30%;
+  border-bottom-right-radius: 120px;
+}
+
+.plantImages {
+  height: 600px; 
+  object-fit: contain;
+  position: absolute;
+  bottom:-14px; 
+  right: 670px;
+  z-index: 2;
+}
+
+.Second-content {
+  bottom: 100px;
+  position: relative;
+  z-index: 3; 
+  margin-left: 50%;
+  margin-right: 40px;
+  margin-top: 50px;
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  max-width: auto;
+  gap: 50px;
+}
+
+.Second-content h3 {
+  font-style: Inter;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.Second-content h4 {
+  font-style: Inter;
+  font-weight: 500;
+  margin-bottom: 20px ;
+  font-size: 30px;
+}
+
+.Second-content p {
+ 
+  line-height: 1;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 17px;
+  font-style: Inter;
+  font-weight: 400;
+}
+
+.newCart{
+  
+    width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.cartButton{
+  display: flex;
+  gap: 13px;
+}
+
+.mainHeading{
+  margin-top: 280px;
+  margin-bottom: 50px;
+  font-size: 45px;
+  font-style: Inter;
+  font-weight: 500;
+  color: white;
+  margin-left: 38%;
 }
